@@ -1,0 +1,21 @@
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts/fonts.css);
+@import url(../blocks/page/page.css);
+
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/__logo/header__logo.css);
+
+@import url(../blocks/profile/profile.css);
+
+@import url(../blocks/gallery/gellary.css);
+
+@import url(../blocks/cards/cards.css);
+@import url(../blocks/cards/__element/cards__element.css);
+@import url(../blocks/cards/__image/cards__image.css);
+@import url(../blocks/cards/__item/cards__item.css);
+@import url(../blocks/cards/__title/cards__item.css);
+@import url(../blocks/cards/__like/cards__like.css);
+@import url(../blocks/cards/__like/_active/cards__like_active.css);
+
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__info/footer__info.css);
