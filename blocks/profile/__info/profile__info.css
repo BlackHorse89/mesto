@@ -1,0 +1,6 @@
+.profile__info {
+  display: flex;
+  color: #fff;
+  align-items: baseline;
+  text-align: center;
+}

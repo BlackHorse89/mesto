@@ -1,14 +1,13 @@
-.footer__info {
-  color: #545454;
+.profile__subtitle {
   font-size: 18px;
   font-weight: 400;
   line-height: 22px;
+  color: #fff;
   margin: 0;
-  padding: 0;
 }
 
 @media screen and (max-width: 568px) {
-  .footer__info {
+  .profile__subtitle {
     font-size: 14px;
     line-height: 17px;
   }
