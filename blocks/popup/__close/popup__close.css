@@ -2,7 +2,7 @@
   color: #fff;
   width: 32px;
   height: 32px;
-  background-image: url(../../../images/Close\ Icon.svg);
+  background-image: url(../../../images/Close-Icon.svg);
   background-color: #000;
   background-position: center;
   background-repeat: no-repeat;
@@ -13,4 +13,12 @@
 
 .popup__close:hover {
   opacity: .6;
+}
+
+@media screen and (max-width: 568px) {
+  .popup__close {
+    width: 20px;
+    height: 20px;
+    background-image: url(../../../images/Close-Icon-small.svg);
+  }
 }
