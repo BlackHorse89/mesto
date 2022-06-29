@@ -2,7 +2,7 @@
   color: #fff;
   width: 32px;
   height: 32px;
-  background-image: url(../../../images/Close-Icon.svg);
+  background-image: url(../../../images/CloseIcon.svg);
   background-color: #000;
   background-position: center;
   background-repeat: no-repeat;
@@ -19,6 +19,6 @@
   .popup__close {
     width: 20px;
     height: 20px;
-    background-image: url(../../../images/Close-Icon-small.svg);
+    background-image: url(../../../images/CloseIconsmall.svg);
   }
 }

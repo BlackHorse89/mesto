@@ -4,3 +4,9 @@
   align-items: baseline;
   text-align: center;
 }
+
+@media screen and (max-width: 628px) {
+  .profile__info {
+    max-width: 256px;
+  }
+}
