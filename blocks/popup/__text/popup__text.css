@@ -1,19 +1,19 @@
 .popup__text {
   border: none;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid rgba(0, 0, 0, .2);
   width: 358px;
   height: 27px;
-  padding: 0 0 6px 0;
-}
-
-.popup__text:first-of-type {
-  margin-bottom: 24px;
-}
-
-.popup__text::placeholder {
+  padding: 0 0 3px 0;
   font-size: 14px;
   font-weight: 400;
   line-height: 17px;
+}
+
+.popup__text:first-of-type {
+  margin-bottom: 25px;
+}
+
+.popup__text::placeholder {
   color: #000;
 }
 

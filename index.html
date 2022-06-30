@@ -24,7 +24,7 @@
         </div>
         <p class="profile__subtitle">Исследователь океана</p>
       </div>
-      <button class="profile__add-button"></button>  
+      <button class="profile__add-button" type="button"></button>  
     </section>
 
     <section class="gallery">
@@ -33,42 +33,42 @@
           <img class="cards__image" src="./images/karachaevck.jpg"  alt="Моностырь">
           <div class="cards__item">
             <h2 class="cards__title">Карачаевск</h2>
-            <img class="cards__like cards__like_active" src="./images/like.svg" alt="лайк">
+            <button class="cards__like" type="button"></button>
           </div>
         </li>
         <li class="cards__element">
           <img class="cards__image" src="./images/elbrus.png" alt="горы вдалике">
           <div class="cards__item">
             <h2 class="cards__title">Гора Эльбрус</h2>
-            <img class="cards__like cards__like_active" src="./images/like.svg" alt="лайк">
+            <button class="cards__like" type="button"></button>
           </div>
         </li>
         <li class="cards__element">
           <img class="cards__image" src="./images/dombai.png" alt="гора">
           <div class="cards__item">
             <h2 class="cards__title">Домбай</h2>
-            <img class="cards__like cards__like_active" src="./images/like.svg" alt="лайк">
+            <button class="cards__like" type="button"></button>
           </div>
         </li>
         <li class="cards__element">
           <img class="cards__image" src="./images/elbrus.png" alt="горы вдалике">
           <div class="cards__item">
             <h2 class="cards__title">Гора Эльбрус</h2>
-            <img class="cards__like cards__like_active" src="./images/like.svg" alt="лайк">
+            <button class="cards__like" type="button"></button>
           </div>
         </li>
         <li class="cards__element">
           <img class="cards__image" src="./images/dombai.png" alt="Гора">
           <div class="cards__item">
             <h2 class="cards__title">Домбай</h2>
-            <img class="cards__like cards__like_active" src="./images/like.svg" alt="лайк">
+            <button class="cards__like" type="button"></button>
           </div>
         </li>
         <li class="cards__element">
           <img class="cards__image" src="./images/karachaevck.jpg" alt="Моностырь">
           <div class="cards__item">
             <h2 class="cards__title">Карачаево-Черкесия</h2>
-            <img class="cards__like cards__like_active" src="./images/like.svg" alt="лайк">
+            <button class="cards__like" type="button"></button>
           </div>
         </li>
       </ul>
@@ -76,19 +76,21 @@
   </main>
 
   <section class="popup">
-    <div class="popup__item">
-      <button class="popup__close" type="button" ></button>
+    <div class="popup__container">
+      <div class="popup__item">
+        <button class="popup__close" type="button" ></button>
+      </div>
+      <form class="popup__form" name="form">   
+          <h3 class="popup__title">Редактировать профиль</h3>
+          <input type="text" name="name" placeholder="Имя" class="popup__text" id="name">
+          <input type="text" name="job" placeholder="Работа" class="popup__text" id="job">
+          <button class="popup__save" type="submit" >Сохранить</button>
+      </form>
     </div>
-    <form class="popup__container" name="form">   
-        <h3 class="popup__title">Редактировать профиль</h3>
-        <input type="text" placeholder="Имя" class="popup__text" id="name">
-        <input type="text" placeholder="Работа" class="popup__text" id="job">
-        <button class="popup__save" type="submit" >Сохранить</button>
-    </form>
   </section>
 
   <footer class="footer">
-    <h2 class="footer__info">© 2022 Mesto Russia</h2>
+    <p class="footer__info">© 2022 Mesto Russia</p>
   </footer>
   <script src="./scripts/index.js"></script>
 </body>

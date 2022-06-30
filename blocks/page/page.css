@@ -6,6 +6,7 @@
   min-width: 320px;
   min-height: 100vh;
   font-family: 'inter', Arial, sans-serif;
+  box-sizing: border-box;
 }
 
 @media screen and (max-width: 1140px) {

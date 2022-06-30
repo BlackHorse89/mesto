@@ -5,8 +5,9 @@
   text-align: center;
 }
 
-@media screen and (max-width: 628px) {
+@media screen and (max-width: 568px) {
   .profile__info {
     max-width: 256px;
+    margin: 0 0 8px 44px;
   }
 }
