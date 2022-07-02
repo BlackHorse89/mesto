@@ -3,7 +3,7 @@
   font-weight: 900;
   line-height: 29px;
   align-self: baseline;
-  padding: 34px 5px 0 36px;
+  padding: 34px 5px 0 0;
   margin: 0 0 44px;
 }
 
@@ -11,9 +11,10 @@
   .popup__title {
     font-size: 18px;
     line-height: 22px;
-    padding: 25px 0 0 0;
+    padding: 0;
     align-self: center;
     margin-bottom: 69px;
     margin-right: 8px;
+    margin-top: 31px;
   }
 }
