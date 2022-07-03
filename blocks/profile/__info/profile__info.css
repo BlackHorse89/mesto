@@ -5,9 +5,15 @@
   text-align: center;
 }
 
-@media screen and (max-width: 568px) {
+@media screen and (max-width: 726px) {
   .profile__info {
     max-width: 256px;
-    margin: 0 0 8px 44px;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .profile__info {
+    max-width: 275px;
+    margin: 0 0 8px 35px;
   }
 }
