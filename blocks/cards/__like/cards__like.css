@@ -18,7 +18,3 @@
   transform: scale(1.2);
 }
 
-.cards__like:active {
-  background-image: url(../../../images/likeblack.svg);
-  opacity: 1;
-}

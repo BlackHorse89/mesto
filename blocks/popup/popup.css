@@ -9,5 +9,8 @@
   justify-content: center;
   flex-direction: column;
   box-sizing: border-box;
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  transition: all .7s ease 0s;
 }
