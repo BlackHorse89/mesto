@@ -50,26 +50,26 @@
       <button class="popup__close" type="button"></button>
       <form class="popup__form" name="form" id="form">   
           <h3 class="popup__title">Редактировать профиль</h3>
-          <input type="text" name="name" placeholder="Имя" class="popup__text" id="name">
-          <input type="text" name="job" placeholder="Работа" class="popup__text" id="job">
+          <input type="text" name="name" placeholder="Имя" class="popup__text text-name" id="name">
+          <input type="text" name="job" placeholder="Работа" class="popup__text text-job" id="job">
           <button class="popup__save" type="submit" >Сохранить</button>
       </form>
     </div>
   </section>
 
-  <section class="popup" id="add-place" aria-label="более темный попап">
+  <section class="popup popup-place" id="add-place" aria-label="добовление картинок">
     <div class="popup__container">
       <button class="popup__close" type="button"></button>
-      <form class="popup__form" name="cards-form" id="cards-form">   
+      <form class="popup__form cards-form" name="cards-form" id="cards-form">   
           <h3 class="popup__title">Новое место</h3>
-          <input type="text" name="place" placeholder="Название" class="popup__text" id="place">
-          <input type="text" name="image" placeholder="Ссылка на картинку" class="popup__text" id="image">
+          <input type="text" name="place" placeholder="Название" class="popup__text text-place" id="place">
+          <input type="text" name="image" placeholder="Ссылка на картинку" class="popup__text text-image" id="image">
           <button class="popup__save" type="submit" >Создать</button>
       </form>
     </div>
   </section>
 
-  <section class="popup" id="popup-image" aria-label="кратинки в попапе">
+  <section class="popup popup-content" id="popup-image" aria-label="кратинки в попапе">
     <div class="popup__container-image">
       <button class="popup__close" type="button"></button>
       <img class="popup__image" src="#" alt="#">
@@ -80,6 +80,7 @@
   <footer class="footer">
     <p class="footer__info">© 2022 Mesto Russia</p>
   </footer>
+  <script src="./scripts/cards.js"></script>
   <script src="./scripts/index.js"></script>
 </body>
 
