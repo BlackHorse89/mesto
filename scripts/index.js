@@ -1,23 +1,19 @@
-const popup = document.querySelector('.popup');
+const popup = document.querySelector('.popup_type_edit-profile');
 const profile = document.querySelector('.profile');
 const popupOpenButton = profile.querySelector('.profile__button');
 const popupCloseButton = popup.querySelector('.popup__close');
 const formElement = popup.querySelector('.popup__form');
-const nameInput = formElement.querySelector('.text-name');
-const jobInput = formElement.querySelector('.text-job');
+const nameInput = formElement.querySelector('.popup__text_name');
+const jobInput = formElement.querySelector('.popup__text_job');
 const profileName = profile.querySelector('.profile__title');
 const profileJob = profile.querySelector('.profile__subtitle');
 
 function openPopup(popup) {
   popup.classList.add('popup_open');
-  if (popup === popupImage)
-  popup.classList.add('popup__open_dark');
 }
 
 function closePopup(popup) {
   popup.classList.remove('popup_open');
-  if (popup === popupImage)
-  popup.classList.remove('popup__open_dark');
 }
 
 function formSubmitHandler (evt) {
@@ -40,7 +36,7 @@ popupCloseButton.addEventListener('click', function() {
 formElement.addEventListener('submit', formSubmitHandler);
 
 const cards = document.querySelector('.cards');
-const cardsTemplate = document.querySelector('.cards-template').content;
+const cardsTemplate = document.querySelector('.cards_template').content;
 
 // Шаблон карточки
 function createCards(element) {
@@ -70,21 +66,13 @@ function likeCard(event) {
   event.target.classList.toggle('cards__like_active')
 };
 
-
-//cards.addEventListener('click', function(event) {
-  //if (event.target.classList.contains('cards__like')) {
-  //event.target.classList.toggle('cards__like_active')
-  //}
-//});
-
-
 function removeCard(event) {
   const card = event.target.closest('.cards__element');
   card.remove();
 };
 // попап для создания карточки
 const popupPlaceOpenButton = profile.querySelector('.profile__add-button');
-const popupPlace = document.querySelector('.popup-place');
+const popupPlace = document.querySelector('.popup_place');
 const popupPlaceCloseButton = popupPlace.querySelector('.popup__close')
 
 popupPlaceOpenButton.addEventListener('click', function() {
@@ -95,9 +83,9 @@ popupPlaceCloseButton.addEventListener('click', function() {
   closePopup(popupPlace);
 });
 // Кнопка оправки карточки
-const formCards = document.querySelector('.cards-form');
-const placeInput = formCards.querySelector('.text-place');
-const imageInput = formCards.querySelector('.text-image');
+const formCards = document.querySelector('.popup__form_cards');
+const placeInput = formCards.querySelector('.popup__text_place');
+const imageInput = formCards.querySelector('.popup__text_image');
 
 formCards.addEventListener('submit', function(evt) {
   evt.preventDefault();
@@ -109,7 +97,7 @@ formCards.addEventListener('submit', function(evt) {
   closePopup(popupPlace);
 });
 
-const popupImage = document.querySelector('.popup-content');
+const popupImage = document.querySelector('.popup_type_full-image');
 const popupImageCloseButton = popupImage.querySelector('.popup__close');
 const popupSubtitle = popupImage.querySelector('.popup__subtitle');
 const popupItem = popupImage.querySelector('.popup__image');
