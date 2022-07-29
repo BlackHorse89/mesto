@@ -1,4 +1,4 @@
-const checkItem = {
+const validationConfig = {
   form: '.popup__form',
   input: '.popup__text',
   button: '.popup__save',
@@ -51,4 +51,4 @@ function stateButton(form, selector) {
       button.classList.add(selector.disabledBatton);
   }
 }
-enableValidation(checkItem);
+enableValidation(validationConfig);

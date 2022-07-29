@@ -3,6 +3,7 @@
   object-position: center;
   max-width: 75vh;
   max-height: 70vh;
+  color: #fff;
 }
 
 @media screen and (max-width: 730px) {
