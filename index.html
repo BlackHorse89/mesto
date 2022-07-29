@@ -48,11 +48,13 @@
   <section class="popup popup_type_edit-profile" id="popup">
     <div class="popup__container">
       <button class="popup__close" type="button"></button>
-      <form class="popup__form" name="form" id="form">   
+      <form class="popup__form" name="form" id="form" novalidate>   
           <h3 class="popup__title">Редактировать профиль</h3>
-          <input type="text" name="name" placeholder="Имя" class="popup__text popup__text_name" id="name">
-          <input type="text" name="job" placeholder="Работа" class="popup__text popup__text_job" id="job">
-          <button class="popup__save" type="submit" >Сохранить</button>
+          <input type="text" name="name" placeholder="Имя" class="popup__text popup__text_name" id="popup-name" required minlength="2" maxlength="40">
+          <span class="popup__error-visible popup-name-error"></span>
+          <input type="text" name="job" placeholder="Работа" class="popup__text popup__text_job" id="popup-job" required minlength="2" maxlength="200">
+           <span class="popup__error-visible popup-job-error"></span>
+          <button class="popup__save popup__save_disabled" type="submit" disabled>Сохранить</button>
       </form>
     </div>
   </section>
@@ -60,16 +62,18 @@
   <section class="popup popup_place" id="add-place" aria-label="добовление картинок">
     <div class="popup__container">
       <button class="popup__close" type="button"></button>
-      <form class="popup__form popup__form_cards" name="form_cards" id="form_cards">   
+      <form class="popup__form popup__form_cards" name="form_cards" id="form_cards" novalidate>   
           <h3 class="popup__title">Новое место</h3>
-          <input type="text" name="place" placeholder="Название" class="popup__text popup__text_place" id="place">
-          <input type="text" name="image" placeholder="Ссылка на картинку" class="popup__text popup__text_image" id="image">
-          <button class="popup__save" type="submit" >Создать</button>
+          <input type="text" name="place" placeholder="Название" class="popup__text popup__text_place" id="popup-place" required minlength="2" maxlength="30">
+          <span class="popup__error-visible popup-place-error"></span>
+          <input type="url" name="image" placeholder="Ссылка на картинку" class="popup__text popup__text_image" id="popup-image" required>
+          <span class="popup__error-visible popup-image-error"></span>
+          <button class="popup__save popup__save_disabled" type="submit" disabled>Создать</button>
       </form>
     </div>
   </section>
 
-  <section class="popup popup_type_full-image" id="popup-image" aria-label="кратинки в попапе">
+  <section class="popup popup_type_full-image" aria-label="кратинки в попапе">
     <div class="popup__container-image">
       <button class="popup__close" type="button"></button>
       <img class="popup__image" src="#" alt="#">
@@ -80,8 +84,10 @@
   <footer class="footer">
     <p class="footer__info">© 2022 Mesto Russia</p>
   </footer>
+ 
   <script src="./scripts/cards.js"></script>
-  <script src="./scripts/index.js"></script>
+  <script src="./scripts/index.js"></script> 
+  <script src="./scripts/validate.js"></script>
 </body>
 
 </html>
